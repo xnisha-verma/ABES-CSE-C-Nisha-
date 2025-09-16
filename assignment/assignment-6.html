@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = prompt("enter the number");
+        let num2 = prompt("enter the value: ");
+        console.log(num1);
+        console.log(num2);
+        let even = [];
+        let odd =[];
+        for(let i=1;i<=10;i++){
+            let mul = num1*i;
+            let mul2 = num2*i;
+            document.write(mul+" "+mul2+"<br>");
+            mul%2==0?even.push(mul):odd.push(mul);
+            mul2%2==0?even.push(mul2):odd.push(mul2);
+        }
+        document.write("even array: ")
+        for(let i=0;i<even.length;i++){
+            document.write(even[i]," ");
+        }
+        document.write("<br>odd array: ")
+        for(let i=0;i<odd.length;i++){
+            document.write(odd[i]," ");
+
+        }
+
+        
+    </script>
+</body>
+</html>

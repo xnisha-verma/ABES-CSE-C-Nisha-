@@ -1,0 +1,8 @@
+<!ELEMENT student (name, marks)>
+<!ELEMENT name #PCDATA >
+<!ELEMENT marks #PCDATA >
+<!ATTLIST student id #CDATA ID #REQUIRED>
+<!ATTLIST student exam #CDATA #IMPLIED>
+<!ATTLIST student assign #CDATA #IMPLIED>
+<!ATTLIST student sub (WT|FSD) "WT">
+
