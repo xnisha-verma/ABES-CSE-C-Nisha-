@@ -1,0 +1,10 @@
+#adi{
+    border: red 2px solid;
+    margin: 8px;
+    width: 400px;
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}

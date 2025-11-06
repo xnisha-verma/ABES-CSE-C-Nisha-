@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 800px;
+        width: 800px;
+        justify-content: center;
+        background-color: rgb(118, 185, 248);
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgb(112, 78, 120);
+        height: 350px;
+        width: 200px;
+    }
+    .phones{
+        height: 80px;
+        width: 60px;
+    }
+    .buttons{
+        margin-top: 10px;
+    }
+    p{
+        font-size: 20px;
+        color: white;
+
+    }
+</style>
+<body>
+    <div class="container">
+
+            <div class="card">
+                <img class="phones" src="https://cdn.mos.cms.futurecdn.net/CdSqhuDyzkSBvS2cizjC4i.jpg" alt="">
+                <p id="phone1"></p>
+                <br>
+                <button class="buttons"><a href="#"></a>Add more</button>
+            </div>
+            <div class="card">
+                <img class="phones" src="https://cdn.mos.cms.futurecdn.net/CdSqhuDyzkSBvS2cizjC4i.jpg" alt="">
+                 <p id="phone2"></p>
+                 <br>
+                <button class="buttons"><a href="#"></a>Add more</button>
+            </div>
+            <div class="card">
+                <img class="phones" src="https://cdn.mos.cms.futurecdn.net/CdSqhuDyzkSBvS2cizjC4i.jpg" alt="">
+                 <p id="phone3"></p>
+                 <br>
+                <button class="buttons"><a href="#"></a>Add more</button>
+            </div>
+    </div>
+    <script>
+        const phones = [
+            ["iphone",50000],
+            ["iphon1",120000],
+            ["iphone2",100000],
+        ]
+        let out ="";
+            for (let i = 0; i < phones.length; i++) {
+            out += `<p>${phones[i][0]} - ₹${phones[i][1]}</p>`;
+    }
+
+    document.getElementById("phone1").innerHTML = out;
+    document.getElementById("phone").innerHTML = out;
+    document.getElementById("phone1").innerHTML = out;
+                        // document.getElementById('phone1').innerHTML=phones[0];
+                        // document.getElementById('phone2').innerHTML=phones[1];
+                        // document.getElementById('phone3').innerHTML=phones[2];
+    </script>
+</body>
+</html>

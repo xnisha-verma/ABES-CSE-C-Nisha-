@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cont{
+        display: flex;
+        flex-direction: row;
+    }
+    .box{
+        display: inline-block;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    img{
+        border-radius: 12px solid black;
+    }
+</style>
+<body>
+    <div class="cont">
+        <div class="box">
+            <img src="https://cdn.pixabay.com/photo/2023/08/07/13/44/tree-8175062_1280.jpg" alt="" height="140px" width="140px">
+        </div>
+        <div class="box">
+            <h2>Your Name:</h2> <input id="name2" type="text" placeholder="enter name here"><button onclick="name()">click</button>
+
+            <h2>B.Tech</h2>
+        </div>
+    </div>
+    <div>
+        <h2>Know Language</h2>
+        <p id="lang"></p>
+        <p id="lang"></p>
+        <p id="lang"></p>
+
+    </div>
+    <script>
+        const name = () =>{
+            let y =document.getElementById('name2');
+            let value = y.value;
+            document.write(value);
+            // document.getElementById('name').innerHTML=value;
+        }
+    </script>
+</body>
+</html>

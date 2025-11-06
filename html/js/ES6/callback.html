@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        const gree=()=>{
+            console.log("Today is Thursday");
+        }
+        const add =(a,b)=>{
+            console.log(a+b);
+        }
+        const calc = (a,b,addcall) =>{
+            addcall(a,b);
+
+        }
+        calc(10,20,add);
+    </script> -->
+
+    <!-- callback-hell -->
+     <script>
+        let count=0;
+        function getData(dataid, nextdata){
+            setTimeout(()=>{
+                console.log("data",dataid);
+                if(nextdata){
+                    nextdata();
+                }
+            },5000);
+        }
+
+        getData(2,()=>{
+            getData(2,()=>{
+                getData(3,()=>{
+                    getData(4);
+                })
+            })
+        });
+     </script>
+</body>
+</html>
